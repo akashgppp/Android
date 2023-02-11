@@ -1,0 +1,56 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".LoginMain"
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="80dp"
+        android:id="@+id/et_email"
+        android:hint="Enter your Email"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#9E140A"
+        android:id="@+id/tv_eroor_email"
+        android:textSize="12sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="80dp"
+        android:hint="Password"
+        android:id="@+id/et_password"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tv_password"
+        android:textColor="#9E140A"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:onClick="Change"
+        android:text="New Registration"
+        android:textAlignment="textEnd"
+        android:textColor="#F80808"
+        android:textSize="18dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="submit"/>
+</LinearLayout>

@@ -1,0 +1,217 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/world"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="REGISTRATION FORM"
+    android:gravity="center"
+    android:textSize="23sp"
+    android:textStyle="bold|normal"
+    android:textColor="#FB2323"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/et_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:textSize="25sp"
+        android:textColorHint="@color/white"
+        android:paddingStart="20dp"
+        android:background="@drawable/circle"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/tv_name"
+        android:textColor="#F40808"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:id="@+id/et_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:paddingStart="20dp"
+        android:background="@drawable/circle"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/tv_email"
+        android:textColor="#F40808"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:id="@+id/et_phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:paddingStart="20dp"
+        android:background="@drawable/circle"
+        tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/tv_phoneNumber"
+        android:textColor="#F40808"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/et_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="25sp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/circle"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/tv_pass"
+        android:textColor="#F40808"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="25sp"
+        android:id="@+id/et_CPassword"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:paddingStart="20dp"
+        android:background="@drawable/circle"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_cpass"
+        android:textColor="#F40808"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    />
+
+        <AutoCompleteTextView
+            android:id="@+id/text_viewCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Select Your City"
+            android:textColorHint="#FFFDFD"
+            tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/textView_city"
+        android:textSize="12sp"
+        android:textColor="#E41212"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rg_main"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText" />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textSize="20sp"
+        android:id="@+id/rb_radio"
+        android:onClick="Gender"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        tools:ignore="HardcodedText" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="20sp"
+            android:onClick="Gender"
+            android:id="@+id/rb_radio2"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            tools:ignore="HardcodedText" />
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/tv_nameRadio"
+        android:gravity="center"
+        android:textColor="#F40808"
+        android:textSize="12sp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:id="@+id/register"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/circle"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
